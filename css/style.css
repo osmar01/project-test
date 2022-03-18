@@ -1,0 +1,49 @@
+:root {
+  --default-color: #6c6aad;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #e6ebee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  opacity: 0.5;
+  color: coral;
+}
+
+.login {
+  float: right;
+}
+
+#bemvindo {
+  font-size: 16px;
+  letter-spacing: 1.72px;
+  color: #6aad6c;
+  font-weight: bold;
+  margin: 24px 16px;
+}
+
+.content-cats {
+  text-align: center;
+}
+
+img {
+  /* border: 1px solid var(--default-color); */
+  width:400px; 
+  height:400px;
+  border-radius: 16px;
+  margin: 12px 6px;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.more-cats {
+  text-align: center;
+  color: var(--default-color);
+}
