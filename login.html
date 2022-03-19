@@ -1,21 +1,50 @@
-<form action="dashboard.html" method="post">
+<!DOCTYPE html>
+<html>
 
-  <label for="uname"><b>Username</b></label>
-  <input type="text" placeholder="Enter Username" name="uname">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-  <label for="psw"><b>Password</b></label>
-  <input type="password" placeholder="Enter Password" name="psw">
-  <div>
+  <title>Gatos</title>
+</head>
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+<body>
+  <div class="content">
+    <form class="card-content" action="dashboard.html" method="post">
+
+      <h2 for="ln">Entrar</h2>
+
+      <div class="content-fields">
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+      </div>
+
+      <div class="content-buttons">
+
+        <button type="submit"  class="btn btn-success">Login</button>
+        <div >
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Lembrar-me
+            </label>
+        </div>
+
+        <div class="forgot">
+          <span>Esqueceu a <a href="#">senha</a></span>
+        </div>
+      </div>
+    </form>
   </div>
-  </div>
-
-  <div>
-    <button type="button">Cancel</button>
-    <span>Forgot <a href="#">password</a></span>
-  </div>
-</form>
+</body>

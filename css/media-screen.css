@@ -18,7 +18,7 @@
 }
 @media screen and (max-device-width: 500px) {
   .responsiva {
-    height: 10px;
+    height: 6px;
     background-color: rgb(102, 255, 0);
   }
 }
