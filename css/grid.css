@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  /* grid-template-columns: 30% 30% 30%; */
+}
+
+.head {
+  grid-area: head;
+}
+
+.menu-nav {
+  grid-area: menu;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+.main-content {
+  grid-area: mainContent;
+}
+
+.artico {
+  grid-area: artico;
+}
+
+.foote {
+  grid-area: foote;
+}
+
+.grid-template-areas1 {
+  grid-template-areas:
+    "head head head"
+    "menu menu menu"
+    "sidenav mainContent artico"
+    "foote foote foote";
+}
+

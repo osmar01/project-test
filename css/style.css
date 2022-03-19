@@ -33,8 +33,8 @@ h1 {
 
 img {
   /* border: 1px solid var(--default-color); */
-  width:400px; 
-  height:400px;
+  width:200px; 
+  height:200px;
   border-radius: 16px;
   margin: 12px 6px;
 }
