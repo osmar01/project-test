@@ -8,63 +8,140 @@
   <link rel="stylesheet" href="css/media-screen.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <title>Gatos</title>
 </head>
 
 <body>
 
-  <section class="grid grid-template-areas1">
+  <section class="container">
 
     <!-- ------------ Header--------------- -->
-    <header class="head">
-      <h1>Gatinhos</h1>
-      <p id="bemvindo"> Bem-vindo Humano!
-        <a class="login" href="login.html" target="_parent">Login</a>
+    <header class="row head">
+      <div class="col">
+        <h1 class="title-page">Gatinhos</h1>
+      </div>
     </header>
+    <div class="row">
+      <div class="col">
+
+        <p id="bemvindo"> Bem-vindo Humano!
+          <a class="login" href="login.html" target="_parent">Login</a>
+        </div>
+    </div>
 
 
     <!-- ------------ menu ------------ -->
     <nav class="menu-nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar scroll</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                data-toggle="dropdown" aria-expanded="false">
+                Link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
     </nav>
 
-    <!-- ----------- content left---------- -->
-    <aside class="sidenav">
-      <p>Algum conteudo relacionado </p>
-    </aside>
+    <div class="content-mid row no-gutters">
 
-    <!-- ----------- main ---------  -->
-    <main class="main-content">
-      </p>
+      <!-- ----------- content left---------- -->
+      <aside class="sidenav col-12 col-md-2">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </aside>
 
-      <div class="content-cats">
-        <img src="gato.jpeg" alt="gatinho">
-        <img src="giphy.gif" alt="This is an animated gif image" />
-        <img src="https://i2.wp.com/desejosdebeleza.com/wp-content/uploads/2014/05/gato-fofo-2.gif?fit=499%2C289&ssl=1"
-          alt="This is an animated gif image" />
-      </div>
+      <!-- ----------- main ---------  -->
+      <main class="main-content col-12 col-md-8">
+        </p>
+
+        <div class="content-cats">
+          <img src="gato.jpeg" alt="gatinho">
+          <img src="giphy.gif" alt="This is an animated gif image" />
+          <img
+            src="https://i2.wp.com/desejosdebeleza.com/wp-content/uploads/2014/05/gato-fofo-2.gif?fit=499%2C289&ssl=1"
+            alt="This is an animated gif image" />
+        </div>
 
 
-      <p class="more-cats">
-        <a href="https://www.google.com/search?q=gatinho&newwindow=1&hl=pt-BR&sxsrf=APq-WBuURQnnU22vSLY6Cfq3AOSwni4DhA:1647473730951&source=lnms&tbm=isch&sa=X&ved=2ahUKEw
+        <p class="more-cats">
+          <a href="https://www.google.com/search?q=gatinho&newwindow=1&hl=pt-BR&sxsrf=APq-WBuURQnnU22vSLY6Cfq3AOSwni4DhA:1647473730951&source=lnms&tbm=isch&sa=X&ved=2ahUKEw
     j6g4r05cv2AhXIG7kGHfoCB8QQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1">
-          Mais gatinhos...</a>
-      </p>
+            Mais gatinhos...</a>
+        </p>
 
-    </main>
+      </main>
 
-    <!-- ------content right ----- -->
-    <div class="artico">
-      <p>Algum conteudo relacionado </p>
+      <!-- ------content right ----- -->
+      <div class="artico col-md-2">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
 
 
 
-    <footer class="foote">
-
+    <div>
       Contatos para visitante
-      </p>
+    </div>
+    <footer class="foote row">
 
       <table>
         <tr>
@@ -85,14 +162,14 @@
           <td>77212-546</td>
         </tr>
       </table>
+    </section>
+  
+    <div class="content-test">
     </footer>
-  </section>
-
-  <div class="content-test">
-    <img class="img-gato" src="bola.png" alt="">
+    <img class="img-gato" src="bola.png" alt="bola">
   </div>
 
-  <div class="responsiva"></div>
+  <!-- <div class="responsiva"></div> -->
 
 </body>
 
