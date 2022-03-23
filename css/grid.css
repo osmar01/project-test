@@ -1,36 +1,47 @@
-.grid {
-  display: grid;
-  /* grid-template-columns: 30% 30% 30%; */
+
+
+.title {
+  grid-area: title;
 }
 
-.head {
-  grid-area: head;
+.pages {
+  grid-area: page;
 }
 
-.menu-nav {
-  grid-area: menu;
+.categories {
+  grid-area: category;
 }
 
-.sidenav {
-  grid-area: sidenav;
-}
-.main-content {
-  grid-area: mainContent;
-}
-
-.artico {
-  grid-area: artico;
-}
-
-.foote {
-  grid-area: foote;
+.contacts {
+  grid-area: contacto;
 }
 
 .grid-template-areas1 {
-  grid-template-areas:
-    "head head head"
-    "menu menu menu"
-    "sidenav mainContent artico"
-    "foote foote foote";
+  display: grid;
+  grid-gap: 12px;
+  grid-template-areas: "title page category contacto";
 }
 
+.grid-template-areas1 > div {
+  height: 149px;
+  border-top: 1px solid #cccccc;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+.grid-template-areas1 > div > p{
+  color: rgb(129 100 100);
+  font-size: 12px;
+}
+
+@media screen and (max-device-width: 750px) {
+  .grid-template-areas1 {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas:
+      "title"
+      "page"
+      "category"
+      "contacto";
+  }
+}
