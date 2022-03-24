@@ -45,3 +45,15 @@
       "contacto";
   }
 }
+
+@media screen and (max-width: 750px) {
+  .grid-template-areas1 {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas:
+      "title"
+      "page"
+      "category"
+      "contacto";
+  }
+}
