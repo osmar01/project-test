@@ -1,0 +1,84 @@
+:root {
+  --default-color: #6c6aad;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f2f2f2 !important;
+  font-family: Verdana, Tahoma, sans-serif !important;
+}
+
+section {
+  height: 100% !important;
+}
+
+.content-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin: 18px 0;
+}
+
+h1 {
+  text-align: center;
+  opacity: 0.5;
+  color: coral;
+}
+
+.login {
+  float: right;
+}
+
+.bemvindo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  letter-spacing: 1.72px;
+  color: #6aad6c;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.menu-nav {
+  margin: 28px 0;
+}
+
+.content-mid {
+  margin: 24px 0;
+}
+
+.foote {
+  margin: 12px 0;
+}
+
+.content-cats > img {
+  /* border: 1px solid var(--default-color); */
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 12px 6px;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.more-cats {
+  text-align: center;
+  color: var(--default-color);
+}
+
+.content-cats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

@@ -1,0 +1,34 @@
+.responsiva {
+  width: 100%;
+  height: 2px;
+  background-color: aquamarine;
+  position: relative;
+  bottom: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .responsiva {
+    height: 2px;
+    background-color: aqua;
+  }
+}
+
+/*  -------- Dispositivos do Chrome --------- */
+@media screen and (max-device-width: 750px) {
+  .responsiva {
+    height: 2px;
+    background-color: rgb(174, 0, 255);
+  }
+  .content-flex {
+    justify-content: flex-start;
+  }
+  
+}
+/*  ----------------- */
+
+@media screen and (max-width: 650px) {
+  .responsiva {
+    height: 2px;
+    background-color: rgb(174, 0, 255);
+  }
+}

@@ -1,0 +1,59 @@
+
+
+.title {
+  grid-area: title;
+}
+
+.pages {
+  grid-area: page;
+}
+
+.categories {
+  grid-area: category;
+}
+
+.contacts {
+  grid-area: contacto;
+}
+
+.grid-template-areas1 {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-areas: "title page category contacto";
+}
+
+.grid-template-areas1 > div {
+  height: 149px;
+  border-top: 1px solid #cccccc;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+.grid-template-areas1 > div > p{
+  color: rgb(129 100 100);
+  font-size: 12px;
+}
+
+@media screen and (max-device-width: 750px) {
+  .grid-template-areas1 {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas:
+      "title"
+      "page"
+      "category"
+      "contacto";
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .grid-template-areas1 {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas:
+      "title"
+      "page"
+      "category"
+      "contacto";
+  }
+}
